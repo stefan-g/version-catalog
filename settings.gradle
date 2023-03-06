@@ -34,7 +34,7 @@ dependencyResolutionManagement {
             alias('spring-retry').to('org.springframework.retry', 'spring-retry').withoutVersion()
             alias('spring-session-redis').to('org.springframework.session', 'spring-session-data-redis').withoutVersion()
             alias('micrometer').to('io.micrometer', 'micrometer-registry-prometheus').withoutVersion()
-            alias('caffeine').to('com.github.ben-manes.caffeine', 'caffeine').version('2.8.8')
+            alias('caffeine').to('com.github.ben-manes.caffeine', 'caffeine').version('3.1.5')
             alias('spring-cloud-dependencies').to('org.springframework.cloud', 'spring-cloud-dependencies').version('2021.0.5')
             //used for feign load balancer -> the newest version can not be used otherwise the warning occurs again.
 
