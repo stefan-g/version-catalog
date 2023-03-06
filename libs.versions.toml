@@ -24,7 +24,7 @@ micrometer = { group = "io.micrometer", name = "micrometer-registry-prometheus" 
 spring-cloud-dependencies = { group = "org.springframework.cloud", name = "spring-cloud-dependencies", version = "2021.0.5" }
 
 #Version has to be defined
-caffeine = { group = "com.github.ben-manes.caffeine", name = "caffeine", version = "2.8.8" }
+caffeine = { group = "com.github.ben-manes.caffeine", name = "caffeine", version = "3.1.5" }
 
 sentry-spring = { group = "io.sentry", name = "sentry-spring", version.ref = "sentry" }
 sentry-log4j2 = { group = "io.sentry", name = "sentry-log4j2", version.ref = "sentry" }
