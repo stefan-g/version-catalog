@@ -78,7 +78,7 @@ dependencyResolutionManagement {
 
             alias('spring-boot-starter-test').to('org.springframework.boot:spring-boot-starter-test:2.7.8')
             alias('junit-jupiter').to('org.junit.jupiter:junit-jupiter:5.9.0')
-            alias('embedded-redis').to('it.ozimov:embedded-redis:0.7.2')
+            alias('embedded-redis').to('it.ozimov:embedded-redis:0.7.3')
             alias('archunit-junit5-engine').to('com.tngtech.archunit:archunit-junit5-engine:1.0.1')
             alias('spring-data-jpa').to('org.springframework.data:spring-data-jpa:2.7.5')
             alias('reflections').to('org.reflections:reflections:0.10.2')
