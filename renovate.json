@@ -5,7 +5,7 @@
   ],
   "packageRules": [
     {
-      "ignorePaths": ["it.ozimov.embedded-redis/**"],
+      "ignorePaths": ["it.ozimov:embedded-redis"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackagePatterns": [
