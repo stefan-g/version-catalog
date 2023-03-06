@@ -5,6 +5,7 @@
   ],
   "packageRules": [
     {
+      "ignorePaths": ["it.ozimov.embedded-redis/**"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackagePatterns": [
@@ -15,20 +16,5 @@
         "patch"
       ]
     }
-  ],
-  "pinDependencies": {
-    "description": "Pin dependency versions",
-    "packageRules": [
-      {
-        "matchPackagePatterns": [
-          "it.ozimov"
-        ],
-        "depTypeList": [
-          "dependencies"
-        ],
-        "rangeStrategy": "pin"
-      }
-    ]
-  }
-
+  ]
 }
