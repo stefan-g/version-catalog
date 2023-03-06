@@ -15,5 +15,20 @@
         "patch"
       ]
     }
-  ]
+  ],
+  "pinDependencies": {
+    "description": "Pin dependency versions",
+    "packageRules": [
+      {
+        "matchPackagePatterns": [
+          "it.ozimov"
+        ],
+        "depTypeList": [
+          "dependencies"
+        ],
+        "rangeStrategy": "pin"
+      }
+    ]
+  }
+
 }
