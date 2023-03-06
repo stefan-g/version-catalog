@@ -17,7 +17,7 @@
       ]
     },
     {
-      "excludePackageNames": ["it.ozimov:embedded-redis"],
+      "matchPackageNames": ["it.ozimov:embedded-redis"],
       "enabled": false
     }
   ]
