@@ -6,7 +6,7 @@
   "packageRules": [
     {
       "matchFiles": ["*.toml"],
-      "groupName": "all non-major dependencies",
+      "groupName": "all non-major spring dependencies ",
       "groupSlug": "all-minor-patch",
       "matchPackagePatterns": [
         "*"
@@ -18,7 +18,7 @@
     },
     {
       "matchFiles": ["package.json"],
-      "groupName": "all non-major dependencies",
+      "groupName": "all non-major npm dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackagePatterns": [
         "*"
