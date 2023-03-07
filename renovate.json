@@ -5,7 +5,8 @@
   ],
   "packageRules": [
     {
-      "matchFiles": ["libs.versions.toml"],
+      "matchPackageNames": ["*"],
+      "matchManagers": ["gradle"],
       "groupName": "all non-major spring dependencies",
       "groupSlug": "all-minor-patch",
       "matchUpdateTypes": [
@@ -14,7 +15,9 @@
       ]
     },
     {
-      "matchFiles": ["package.json"],
+      "matchPackageNames": ["*"],
+      "matchManagers": ["npm"],
+      "enabled": false,
       "groupName": "all non-major npm dependencies",
       "groupSlug": "all-minor-patch",
       "matchUpdateTypes": [
