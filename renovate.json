@@ -8,9 +8,6 @@
       "matchFiles": ["libs.versions.toml"],
       "groupName": "all non-major spring dependencies",
       "groupSlug": "all-minor-patch",
-      "matchPackagePatterns": [
-        "*"
-      ],
       "matchUpdateTypes": [
         "minor",
         "patch"
@@ -20,9 +17,6 @@
       "matchFiles": ["package.json"],
       "groupName": "all non-major npm dependencies",
       "groupSlug": "all-minor-patch",
-      "matchPackagePatterns": [
-        "*"
-      ],
       "matchUpdateTypes": [
         "minor",
         "patch"
