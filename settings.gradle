@@ -14,78 +14,78 @@ pluginManagement {
 //	}
 //}
 
-dependencyResolutionManagement {
-    versionCatalogs {
-        create('libs') {
-            plugin('spring-boot', 'org.springframework.boot').version('2.7.8')
-            plugin('spring-dependency-management', 'io.spring.dependency-management').version('1.1.0')
-
-            alias('spring-starter-web').to('org.springframework.boot', 'spring-boot-starter-web').withoutVersion()
-            alias('spring-configuration-processor').to('org.springframework.boot', 'spring-boot-configuration-processor').withoutVersion()
-            alias('spring-actuator').to('org.springframework.boot', 'spring-boot-starter-actuator').withoutVersion()
-            alias('spring-log4j2').to('org.springframework.boot', 'spring-boot-starter-log4j2').withoutVersion()
-            alias('spring-validation').to('org.springframework.boot', 'spring-boot-starter-validation').withoutVersion()
-            alias('spring-webflux').to('org.springframework.boot', 'spring-boot-starter-webflux').withoutVersion()
-            alias('spring-redis').to('org.springframework.boot', 'spring-boot-starter-data-redis').withoutVersion()
-            alias('spring-cloud-sleuth').to('org.springframework.cloud', 'spring-cloud-starter-sleuth').withoutVersion()
-            alias('spring-cloud-vault').to('org.springframework.cloud', 'spring-cloud-starter-vault-config').withoutVersion()
-            alias('spring-cloud-eureka-client').to('org.springframework.cloud', 'spring-cloud-starter-netflix-eureka-client').withoutVersion()
-            alias('spring-cloud-openfeign').to('org.springframework.cloud', 'spring-cloud-starter-openfeign').withoutVersion()
-            alias('spring-retry').to('org.springframework.retry', 'spring-retry').withoutVersion()
-            alias('spring-session-redis').to('org.springframework.session', 'spring-session-data-redis').withoutVersion()
-            alias('micrometer').to('io.micrometer', 'micrometer-registry-prometheus').withoutVersion()
-            alias('caffeine').to('com.github.ben-manes.caffeine', 'caffeine').version('2.8.8')
-            alias('spring-cloud-dependencies').to('org.springframework.cloud', 'spring-cloud-dependencies').version('2021.0.5')
-            //used for feign load balancer -> the newest version can not be used otherwise the warning occurs again.
-
-            bundle('spring-bundle', [
-                    'spring-starter-web',
-                    'spring-configuration-processor',
-                    'spring-actuator',
-                    'spring-log4j2',
-                    'spring-validation',
-                    'spring-webflux',
-                    'spring-redis',
-                    'spring-cloud-sleuth',
-                    'spring-cloud-vault',
-                    'spring-cloud-eureka-client',
-                    'spring-cloud-openfeign',
-                    'spring-retry',
-                    'spring-session-redis',
-                    'micrometer',
-                    'caffeine'
-            ])
-
-            version('sentry', '6.13.1')
-            alias('sentry-spring').to('io.sentry', 'sentry-spring').versionRef('sentry')
-            alias('sentry-log4j2').to('io.sentry', 'sentry-log4j2').versionRef('sentry')
-            bundle('sentry', ['sentry-spring', 'sentry-log4j2'])
-
-            alias('problem-spring-web').to('org.zalando:problem-spring-web:0.27.0')
-            alias('logbook-spring-boot-starter').to('org.zalando:logbook-spring-boot-starter:2.14.0')
-            bundle('zalando', ['problem-spring-web', 'logbook-spring-boot-starter'])
-
-            alias('logstash-gelf').to('biz.paluch.logging:logstash-gelf:1.15.0')
-            alias('gson').to('com.google.code.gson:gson:2.10.1')
-            alias('zip4j').to('net.lingala.zip4j:zip4j:2.11.4')
-            alias('commons-collections').to('org.apache.commons:commons-collections4:4.4')
-            alias('commons-lang').to('org.apache.commons:commons-lang3:3.12.0')
-            alias('commons-io').to('commons-io:commons-io:2.11.0')
-            alias('springdoc-openapi').to('org.springdoc:springdoc-openapi-ui:1.6.14')
-            alias('minio').to('io.minio:minio:8.5.1')
-            alias('okhttp').to('com.squareup.okhttp3:okhttp:4.10.0')
-            alias('redisson-spring').to('org.redisson:redisson-spring-boot-starter:3.18.0')
-
-            alias('spring-boot-starter-test').to('org.springframework.boot:spring-boot-starter-test:2.7.8')
-            alias('junit-jupiter').to('org.junit.jupiter:junit-jupiter:5.9.0')
-            alias('embedded-redis').to('it.ozimov:embedded-redis:0.7.2')
-            alias('archunit-junit5-engine').to('com.tngtech.archunit:archunit-junit5-engine:1.0.1')
-            alias('spring-data-jpa').to('org.springframework.data:spring-data-jpa:2.7.5')
-            alias('reflections').to('org.reflections:reflections:0.10.2')
-
-            bundle('test-redis', ['spring-boot-starter-test', 'junit-jupiter', 'embedded-redis', 'archunit-junit5-engine', 'spring-data-jpa', 'reflections'])
-        }
-    }
-}
+//dependencyResolutionManagement {
+//    versionCatalogs {
+//        create('libs') {
+//            plugin('spring-boot', 'org.springframework.boot').version('2.7.8')
+//            plugin('spring-dependency-management', 'io.spring.dependency-management').version('1.1.0')
+//
+//            alias('spring-starter-web').to('org.springframework.boot', 'spring-boot-starter-web').withoutVersion()
+//            alias('spring-configuration-processor').to('org.springframework.boot', 'spring-boot-configuration-processor').withoutVersion()
+//            alias('spring-actuator').to('org.springframework.boot', 'spring-boot-starter-actuator').withoutVersion()
+//            alias('spring-log4j2').to('org.springframework.boot', 'spring-boot-starter-log4j2').withoutVersion()
+//            alias('spring-validation').to('org.springframework.boot', 'spring-boot-starter-validation').withoutVersion()
+//            alias('spring-webflux').to('org.springframework.boot', 'spring-boot-starter-webflux').withoutVersion()
+//            alias('spring-redis').to('org.springframework.boot', 'spring-boot-starter-data-redis').withoutVersion()
+//            alias('spring-cloud-sleuth').to('org.springframework.cloud', 'spring-cloud-starter-sleuth').withoutVersion()
+//            alias('spring-cloud-vault').to('org.springframework.cloud', 'spring-cloud-starter-vault-config').withoutVersion()
+//            alias('spring-cloud-eureka-client').to('org.springframework.cloud', 'spring-cloud-starter-netflix-eureka-client').withoutVersion()
+//            alias('spring-cloud-openfeign').to('org.springframework.cloud', 'spring-cloud-starter-openfeign').withoutVersion()
+//            alias('spring-retry').to('org.springframework.retry', 'spring-retry').withoutVersion()
+//            alias('spring-session-redis').to('org.springframework.session', 'spring-session-data-redis').withoutVersion()
+//            alias('micrometer').to('io.micrometer', 'micrometer-registry-prometheus').withoutVersion()
+//            alias('caffeine').to('com.github.ben-manes.caffeine', 'caffeine').version('2.8.8')
+//            alias('spring-cloud-dependencies').to('org.springframework.cloud', 'spring-cloud-dependencies').version('2021.0.5')
+//            //used for feign load balancer -> the newest version can not be used otherwise the warning occurs again.
+//
+//            bundle('spring-bundle', [
+//                    'spring-starter-web',
+//                    'spring-configuration-processor',
+//                    'spring-actuator',
+//                    'spring-log4j2',
+//                    'spring-validation',
+//                    'spring-webflux',
+//                    'spring-redis',
+//                    'spring-cloud-sleuth',
+//                    'spring-cloud-vault',
+//                    'spring-cloud-eureka-client',
+//                    'spring-cloud-openfeign',
+//                    'spring-retry',
+//                    'spring-session-redis',
+//                    'micrometer',
+//                    'caffeine'
+//            ])
+//
+//            version('sentry', '6.13.1')
+//            alias('sentry-spring').to('io.sentry', 'sentry-spring').versionRef('sentry')
+//            alias('sentry-log4j2').to('io.sentry', 'sentry-log4j2').versionRef('sentry')
+//            bundle('sentry', ['sentry-spring', 'sentry-log4j2'])
+//
+//            alias('problem-spring-web').to('org.zalando:problem-spring-web:0.27.0')
+//            alias('logbook-spring-boot-starter').to('org.zalando:logbook-spring-boot-starter:2.14.0')
+//            bundle('zalando', ['problem-spring-web', 'logbook-spring-boot-starter'])
+//
+//            alias('logstash-gelf').to('biz.paluch.logging:logstash-gelf:1.15.0')
+//            alias('gson').to('com.google.code.gson:gson:2.10.1')
+//            alias('zip4j').to('net.lingala.zip4j:zip4j:2.11.4')
+//            alias('commons-collections').to('org.apache.commons:commons-collections4:4.4')
+//            alias('commons-lang').to('org.apache.commons:commons-lang3:3.12.0')
+//            alias('commons-io').to('commons-io:commons-io:2.11.0')
+//            alias('springdoc-openapi').to('org.springdoc:springdoc-openapi-ui:1.6.14')
+//            alias('minio').to('io.minio:minio:8.5.1')
+//            alias('okhttp').to('com.squareup.okhttp3:okhttp:4.10.0')
+//            alias('redisson-spring').to('org.redisson:redisson-spring-boot-starter:3.18.0')
+//
+//            alias('spring-boot-starter-test').to('org.springframework.boot:spring-boot-starter-test:2.7.8')
+//            alias('junit-jupiter').to('org.junit.jupiter:junit-jupiter:5.9.0')
+//            alias('embedded-redis').to('it.ozimov:embedded-redis:0.7.2')
+//            alias('archunit-junit5-engine').to('com.tngtech.archunit:archunit-junit5-engine:1.0.1')
+//            alias('spring-data-jpa').to('org.springframework.data:spring-data-jpa:2.7.5')
+//            alias('reflections').to('org.reflections:reflections:0.10.2')
+//
+//            bundle('test-redis', ['spring-boot-starter-test', 'junit-jupiter', 'embedded-redis', 'archunit-junit5-engine', 'spring-data-jpa', 'reflections'])
+//        }
+//    }
+//}
 
 rootProject.name = 'version-catalog'
