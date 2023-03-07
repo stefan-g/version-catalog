@@ -17,7 +17,6 @@
     {
       "matchPackageNames": ["*"],
       "matchManagers": ["npm"],
-      "enabled": false,
       "groupName": "all non-major npm dependencies",
       "groupSlug": "all-minor-patch",
       "matchUpdateTypes": [
