@@ -5,8 +5,8 @@
   ],
   "packageRules": [
     {
-      "matchFiles": ["*.toml"],
-      "groupName": "all non-major spring dependencies ",
+      "matchFiles": ["libs.versions.toml"],
+      "groupName": "all non-major spring dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackagePatterns": [
         "*"
