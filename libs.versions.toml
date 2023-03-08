@@ -1,6 +1,6 @@
 [versions]
 sentry = "6.13.1"
-spring-boot = "2.7.9"
+spring-boot = "3.0.4"
 spring-dependency-management = "1.1.0"
 
 [libraries]
