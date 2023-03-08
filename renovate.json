@@ -7,18 +7,16 @@
     {
       "matchManagers": ["gradle"],
       "groupName": "all non-major spring dependencies",
-      "groupSlug": "all-minor-gradle-patch",
+      "groupSlug": "all-minor",
       "matchUpdateTypes": [
-        "minor",
-        "patch"
+        "minor"
       ]
     },
     {
-      "matchManagers": ["npm"],
-      "groupName": "all non-major npm dependencies",
-      "groupSlug": "all-minor-npm-patch",
+      "matchManagers": ["gradle"],
+      "groupName": "all patch dependencies",
+      "groupSlug": "all-patches",
       "matchUpdateTypes": [
-        "minor",
         "patch"
       ]
     },
