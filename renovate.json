@@ -3,11 +3,11 @@
   "extends": [
     "config:base"
   ],
+  "timezone": "Europe/Zurich",
   "packageRules": [
     {
       "matchManagers": ["gradle"],
-      "groupName": "all non-major spring dependencies",
-      "groupSlug": "all-minor",
+      "groupName": "all minor spring dependencies",
       "matchUpdateTypes": [
         "minor"
       ]
@@ -15,7 +15,7 @@
     {
       "matchManagers": ["gradle"],
       "groupName": "all patch dependencies",
-      "groupSlug": "all-patches",
+      "automerge": true,
       "matchUpdateTypes": [
         "patch"
       ]
