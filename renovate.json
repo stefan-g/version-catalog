@@ -4,6 +4,7 @@
     "config:base"
   ],
   "timezone": "Europe/Zurich",
+  "requiredStatusChecks": null,
   "packageRules": [
     {
       "matchManagers": ["gradle"],
